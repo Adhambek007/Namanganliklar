@@ -138,6 +138,56 @@
 .eximple_span{
     color: black;
 }
+.wrapper{
+    padding: 18px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+}
+.wrapper_text{
+    margin-top: 11px;
+    max-width: 380px;
+    width: 100%;
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20.15px;
+    color: #202020;
+}
+.wrapper_span{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.59px;
+    color: #6B6D97;
+
+}
+@media screen and (max-width: 1300px){
+    .contact_img{
+        max-width: 1200px;
+        width: 100%;
+    }
+    .hero{
+        max-width: 1200px;
+        width: 100%;
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+        
+    }
+    .eximple{
+        max-width: 1200px;
+        width: 100%;
+    }
+    .hero_line{
+        display: none;
+    }
+    .wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .wrapper_img{
+        max-width: 386px;
+        width: 100%;
+    }
+}
 @media screen and (max-width: 800px){
     .container{
         padding: 0 10px;
@@ -178,28 +228,31 @@
         display: grid;
         grid-template-columns: 1fr;
     }
+    .hero_text{
+        font-size: 16px;
+    }
     .eximple{
         max-width: 1200px;
         width: 100%;
     }
-}
-@media screen and (max-width: 1300px){
-    .contact_img{
-        max-width: 1200px;
-        width: 100%;
+    .eximple_text{
+        font-size: 15px;
     }
-    .hero{
-        max-width: 1200px;
-        width: 100%;
+    .eximple_text2{
+        font-size: 15px;
+    }
+    .eximple_text3{
+        font-size: 15px;
+    }
+    .wrapper{
         display: grid;
-        grid-template-columns:  1fr 1fr;
-        
+        grid-template-columns: 1fr;
+    .wrapper_text{
+        font-size: 15px;
+        color: #1E96C8;
     }
-    .eximple{
-        max-width: 1200px;
-        width: 100%;
-    }
-    .hero_line{
-        display: none;
+    .wrapper_span{
+        font-size: 13px;
     }
 }
+
