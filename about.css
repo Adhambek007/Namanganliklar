@@ -60,12 +60,19 @@
 }
 .container_text{
     color: white;
+
 }
-.content_text{
+.content_ul{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.content_ul_text > a{
     font-weight: 500;
     font-size: 19px;
     letter-spacing: 2px;
     word-spacing: 2px; 
+    color: #515151;
 }
 .content{
     background-color: white;
@@ -247,6 +254,8 @@
     padding: 10px 31px;
     border-radius: 5px;
     margin: 0 auto;
+    display: block;
+    margin-top: 10px;
 }
 .customers_button_text{
     font-size: 17px;
@@ -261,14 +270,14 @@
     flex-direction: column;
     gap: 18px;
     background-color: #F6F6F9;
-    padding: 16px 10px;
-    max-height: 585px;
+    padding: 10px 10px;
+    max-height: 535px;
     height: 100%;
     border-radius: 5px;
     align-items: center;
 }
 .How_img{
-    margin-top: 20px;
+    margin-top: 25px;
 }
 .How_box_title{
     font-weight: 500;
@@ -283,7 +292,7 @@
     color: #202020;
 }
 .How_box_span{
-    margin-top: 11px;
+    padding-top: 11px ;
     font-size: 14px;
     font-weight: 400;
     line-height: 16.59px;
@@ -294,6 +303,125 @@
     max-width: 346px;
     border: 2px solid #E4E4E4;
 }
+.card{
+    display: flex;
+    align-items: center;
+    background-color: #F6F6F9;
+    padding: 37px 19px;
+    padding-bottom: 0px;
+    border-radius: 5px;
+}
+.card_child{
+    display: flex;
+    align-items: center;
+    gap: 63px;
+}
+.card_title{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #295093;
+}
+.card_text{
+    margin-top: 10px;
+    max-width: 515px;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #333333;
+}
+.card_box{
+    display: flex;
+    align-items: center;
+    gap: 19px;
+}
+.footer{
+    margin-top: 38px;
+    background-color: #295093;
+    padding: 18px 0;
+}
+.footer_namanganliklar{
+    background-color: #133C82;
+    padding: 11px 9px;
+    border-radius: 5px;
+}
+.footer_namanganliklar_text{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.footer_box_text{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.footer_box_button{
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 9px;
+}
+.footer_button_text{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #295093;
+}
+.footer_box{
+    display: flex;
+    align-items: center;
+    gap: 207px;
+}
+.footer_inner_box{
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+.footer_hr{
+    margin-top: 20px;
+    max-width: 1200px;
+    width: 100%;
+    border: 2px solid #133C82;
+}
+.footer_child_text{
+    margin-top: 10px;
+    max-width: 365px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.footer_child_span{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.footer_box_ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footer_child{
+    margin-top: 12px;
+}
+.footer_ul_text > a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.footer_child{
+    display: flex;
+    align-items: flex-start;
+    gap: 117px;
+}
 @media screen and (max-width: 1300px){
     .contact_img{
         max-width: 1200px;
@@ -303,8 +431,7 @@
         max-width: 1200px;
         width: 100%;
         display: grid;
-        grid-template-columns:  1fr 1fr;
-        
+        grid-template-columns:  1fr 1fr;  
     }
     .eximple{
         max-width: 1200px;
@@ -321,11 +448,40 @@
         max-width: 386px;
         width: 100%;
     }
+    .customers{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .card_box{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .footer_box{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer_inner_box{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer_child{
+        display: grid;
+        grid-template-columns: 1fr
+    }
 }
 @media screen and (max-width: 800px){
     .container{
         padding: 0 10px;
         
+    }
+    .header{
+        padding: 0 10px;
+
     }
     .container_img{
         max-width: 200px;
@@ -342,6 +498,11 @@
     }
     .container_inner_box{
         padding: 8px 8px;
+    }
+    .content_ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
     .container_text{
         font-size: 14px;
@@ -398,6 +559,41 @@
     }
     .wrap_button_text{
         font-size: 16px;
+    }
+    .customers{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .customers_box{
+        grid-template-columns: 1fr;
+        display: grid;
+    }
+    .How_img{
+        max-width: 386px;
+        width: 100%;
+    }
+    .How{
+        max-width: 386px;
+        width: 100%;
+    }
+    .card{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer_box{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .footer_inner_box{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .footer_child{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        
     }
 }
 
